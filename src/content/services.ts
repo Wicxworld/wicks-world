@@ -10,11 +10,13 @@ export type Service = {
   useCases: string[];
   seoTitle: string;
   seoDescription: string;
+  image: string;
 };
 
 export const services: Service[] = [
   {
     slug: "creative-direction",
+    image: "/services/creative-direction.jpg",
     title: "Creative Direction",
     navLabel: "Creative Direction",
     summary:
@@ -48,6 +50,7 @@ export const services: Service[] = [
   },
   {
     slug: "photography",
+    image: "/services/photography.jpg",
     title: "Photography",
     navLabel: "Photography",
     summary:
@@ -81,6 +84,7 @@ export const services: Service[] = [
   },
   {
     slug: "cinematography-film",
+    image: "/services/cinematography-film.jpg",
     title: "Cinematography & Film",
     navLabel: "Cinematography & Film",
     summary:
@@ -114,6 +118,7 @@ export const services: Service[] = [
   },
   {
     slug: "video-editing-post",
+    image: "/services/video-editing-post.jpg",
     title: "Video Editing & Post",
     navLabel: "Video Editing & Post",
     summary:
@@ -147,6 +152,7 @@ export const services: Service[] = [
   },
   {
     slug: "motion-visual-design",
+    image: "/services/motion-visual-design.jpg",
     title: "Motion & Visual Design",
     navLabel: "Motion & Visual Design",
     summary:
@@ -180,6 +186,7 @@ export const services: Service[] = [
   },
   {
     slug: "content-production",
+    image: "/services/content-production.jpg",
     title: "Content Production",
     navLabel: "Content Production",
     summary:
