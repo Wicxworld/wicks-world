@@ -22,7 +22,7 @@ export default function WorkPage() {
           <PageIntro
             kicker="Work"
             title="How we think, shown as studies."
-            lede="These are capability studies, not client cases. No brands are named. Frames are editorial placeholders until commissioned work is cleared for the archive."
+            lede="These are capability studies, not client cases. No brands are named. Frames are editorial photographs until commissioned work is cleared for the archive."
           />
           <ul className="mt-16 grid gap-14 lg:grid-cols-1">
             {workStudies.map((study) => (
@@ -35,6 +35,8 @@ export default function WorkPage() {
                     <PlaceholderFrame
                       accent={study.accent}
                       label={study.title}
+                      src={study.image}
+                      ratio="wide"
                     />
                   </div>
                   <div className="lg:col-span-5">

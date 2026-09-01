@@ -8,11 +8,13 @@ export type Solution = {
   howWeWork: string;
   seoTitle: string;
   seoDescription: string;
+  image: string;
 };
 
 export const solutions: Solution[] = [
   {
     slug: "brands",
+    image: "/solutions/brands.jpg",
     title: "Brands",
     audience: "Brands",
     summary:
@@ -33,6 +35,7 @@ export const solutions: Solution[] = [
   },
   {
     slug: "businesses",
+    image: "/solutions/businesses.jpg",
     title: "Businesses",
     audience: "Businesses",
     summary:
@@ -53,6 +56,7 @@ export const solutions: Solution[] = [
   },
   {
     slug: "artists-creatives",
+    image: "/solutions/artists-creatives.jpg",
     title: "Artists & Creatives",
     audience: "Artists & Creatives",
     summary:
@@ -73,6 +77,7 @@ export const solutions: Solution[] = [
   },
   {
     slug: "organizations",
+    image: "/solutions/organizations.jpg",
     title: "Organisations",
     audience: "Organisations",
     summary:
@@ -93,6 +98,7 @@ export const solutions: Solution[] = [
   },
   {
     slug: "individuals",
+    image: "/solutions/individuals.jpg",
     title: "Individuals",
     audience: "Individuals",
     summary:

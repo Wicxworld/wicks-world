@@ -53,7 +53,9 @@ export default async function SolutionDetailPage({ params }: Props) {
             <PlaceholderFrame
               accent="earth"
               label={solution.title}
-              caption="Editorial placeholder."
+              src={solution.image}
+              caption="Editorial photograph illustrating this audience."
+              ratio="portrait"
             />
           </div>
         </Container>

@@ -34,7 +34,8 @@ export default function AboutPage() {
               <PlaceholderFrame
                 accent="charcoal"
                 label="Wick's World · Lagos"
-                caption="Studio mark as a still. Photography of the practice will replace this when it exists to show."
+                src="/about/lagos.jpg"
+                caption="Lagos, where the studio works. Photography of the practice will replace this when it exists to show."
                 ratio="square"
               />
             </div>
