@@ -4,11 +4,13 @@
   "private": true,
   "description": "Wick's World — creative studio and production house. W's Creative Studios Ltd, Lagos, Nigeria.",
   "scripts": {
+    "prebuild": "node scripts/fetch-images.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "fetch-images": "node scripts/fetch-images.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
