@@ -48,7 +48,8 @@ export default async function WorkStudyPage({ params }: Props) {
             <PlaceholderFrame
               accent={study.accent}
               label={study.title}
-              caption="Editorial placeholder. Not a production still from a named client."
+              src={study.heroImage}
+              caption="Editorial photograph illustrating this capability study. Not a production still from a named client."
             />
           </div>
         </Container>
@@ -101,12 +102,16 @@ export default async function WorkStudyPage({ params }: Props) {
           <PlaceholderFrame
             accent={study.accent}
             label="Sequence study"
+            src={study.sequenceImage}
             ratio="square"
+            caption="Sequence study — editorial still."
           />
           <PlaceholderFrame
             accent="gold"
             label="Finishing note"
+            src={study.finishingImage}
             ratio="square"
+            caption="Finishing note — editorial still."
           />
         </Container>
       </Section>
@@ -119,7 +124,7 @@ export default async function WorkStudyPage({ params }: Props) {
               {others.map((item) => (
                 <li key={item.slug}>
                   <Link href={`/work/${item.slug}`} className="no-underline">
-                    <PlaceholderFrame accent={item.accent} label={item.title} />
+                    <PlaceholderFrame accent={item.accent} label={item.title} src={item.image} ratio="wide" />
                     <h2 className="mt-4 font-display text-2xl tracking-tight">
                       {item.title}
                     </h2>

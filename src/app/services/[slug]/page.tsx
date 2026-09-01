@@ -66,7 +66,8 @@ export default async function ServiceDetailPage({ params }: Props) {
             <PlaceholderFrame
               accent="teal"
               label={service.title}
-              caption="Placeholder still. Real production frames replace this when they are cleared."
+              src={service.image}
+              caption="Editorial photograph. Real production frames replace this when they are cleared."
               ratio="portrait"
             />
           </div>
