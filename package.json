@@ -2,15 +2,16 @@
   "name": "wicks-world",
   "version": "1.0.0",
   "private": true,
-  "description": "Wick's World — creative studio and production house. W's Creative Studios Ltd, Lagos, Nigeria.",
+  "description": "Wick's World \u2014 creative studio and production house. W's Creative Studios Ltd, Lagos, Nigeria.",
   "scripts": {
-    "prebuild": "node scripts/fetch-images.mjs",
+    "prebuild": "node scripts/fetch-images.mjs && node scripts/ensure-logo.mjs",
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/ensure-logo.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "fetch-images": "node scripts/fetch-images.mjs"
+    "fetch-images": "node scripts/fetch-images.mjs",
+    "ensure-logo": "node scripts/ensure-logo.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
@@ -27,6 +28,7 @@
     "eslint": "^9",
     "eslint-config-next": "^16.3.3",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vercel": "^59.11.0"
   }
 }
