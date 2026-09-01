@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/content/services";
 import {
@@ -15,7 +16,16 @@ export function Footer() {
     <footer className="border-t border-[var(--rule)] bg-charcoal text-paper">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-12">
         <div className="lg:col-span-5">
-          <p className="type-nav tracking-[0.22em] text-paper">Wick&apos;s World</p>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/brand/wicks-world-logo.png"
+              alt=""
+              width={290}
+              height={297}
+              className="h-12 w-auto object-contain"
+            />
+            <p className="type-nav tracking-[0.22em] text-paper">Wick&apos;s World</p>
+          </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-paper/70">
             {site.legalName}
             <br />
