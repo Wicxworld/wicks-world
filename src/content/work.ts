@@ -12,6 +12,10 @@ export type WorkStudy = {
   accent: "charcoal" | "teal" | "earth" | "gold";
   seoTitle: string;
   seoDescription: string;
+  image: string;
+  heroImage: string;
+  sequenceImage: string;
+  finishingImage: string;
 };
 
 export const workStudies: WorkStudy[] = [
@@ -35,10 +39,14 @@ export const workStudies: WorkStudy[] = [
       "A film language that can be reused: the next piece does not have to start from zero. We do not attach metrics or named clients to this study. The proof is in the grammar, not in a case-study scoreboard.",
     notes: [
       "This is a capability study, not a client case. No brand is named.",
-      "Stills and frames shown on this page are editorial placeholders until commissioned work is cleared for the archive.",
+      "Photographs on this page are editorial stills illustrating the capability until commissioned work is cleared for the archive.",
     ],
     placeholder: true,
     accent: "charcoal",
+    image: "/work/brand-film-language/cover.jpg",
+    heroImage: "/work/brand-film-language/hero.jpg",
+    sequenceImage: "/work/brand-film-language/sequence.jpg",
+    finishingImage: "/work/brand-film-language/finishing.jpg",
     seoTitle: "Brand Film Language",
     seoDescription:
       "A Wick's World capability study on building visual grammar for branded film — treatment, cinematography, and edit as one language.",
@@ -63,10 +71,14 @@ export const workStudies: WorkStudy[] = [
       "A body of stills that can be laid out without apology. Qualitative, not counted. No named clients, no invented conversion rates.",
     notes: [
       "This is a capability study, not a client case. No brand is named.",
-      "Frames on this page are placeholders. Real photography will replace them when it is cleared for public use.",
+      "Photographs on this page are editorial stills illustrating the capability until commissioned work is cleared for public use.",
     ],
     placeholder: true,
     accent: "earth",
+    image: "/work/commercial-stills/cover.jpg",
+    heroImage: "/work/commercial-stills/hero.jpg",
+    sequenceImage: "/work/commercial-stills/sequence.jpg",
+    finishingImage: "/work/commercial-stills/finishing.jpg",
     seoTitle: "Commercial Stills",
     seoDescription:
       "A Wick's World capability study on commercial photography — directed stills for campaign, web, and print.",
@@ -91,10 +103,14 @@ export const workStudies: WorkStudy[] = [
       "A set of assets that hold together across formats. The system is the deliverable as much as any single film or frame. No named clients. No reach figures.",
     notes: [
       "This is a capability study, not a client case. No brand is named.",
-      "Visuals on this page are editorial placeholders, not production stills.",
+      "Photographs on this page are editorial stills illustrating a campaign system, not production stills from a named client.",
     ],
     placeholder: true,
     accent: "teal",
+    image: "/work/campaign-content-systems/cover.jpg",
+    heroImage: "/work/campaign-content-systems/hero.jpg",
+    sequenceImage: "/work/campaign-content-systems/sequence.jpg",
+    finishingImage: "/work/campaign-content-systems/finishing.jpg",
     seoTitle: "Campaign Content Systems",
     seoDescription:
       "A Wick's World capability study on producing stills, film, and design as one campaign system.",
