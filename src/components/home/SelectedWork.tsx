@@ -15,7 +15,7 @@ export function SelectedWork() {
             <p className="type-label">Selected work</p>
             <h2 className="type-section mt-4">Proof, not identity.</h2>
             <p className="type-lede mt-5">
-              Capability studies. No named clients. Placeholders until
+              Capability studies. No named clients. Editorial photographs until
               commissioned work is cleared for the archive.
             </p>
           </div>
@@ -31,7 +31,8 @@ export function SelectedWork() {
                   <PlaceholderFrame
                     label={study.title}
                     accent={study.accent}
-                    ratio={index === 1 ? "portrait" : "wide"}
+                    ratio="portrait"
+                    src={study.image}
                   />
                   <p className="type-label mt-5">{study.kicker}</p>
                   <h3 className="mt-2 font-display text-2xl tracking-tight group-hover:text-teal">
